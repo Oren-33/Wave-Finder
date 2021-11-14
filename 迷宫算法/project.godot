@@ -1,0 +1,39 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node",
+"class": "WaveCreater",
+"language": "GDScript",
+"path": "res://WaveCreater.gd"
+}, {
+"base": "Node",
+"class": "Wave_Creater",
+"language": "GDScript",
+"path": "res://Wave_Creater.gd"
+} ]
+_global_script_class_icons={
+"WaveCreater": "",
+"Wave_Creater": ""
+}
+
+[application]
+
+config/name="迷宫算法"
+run/main_scene="res://MainWorld.tscn"
+config/icon="res://icon.png"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
